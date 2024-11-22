@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Consulta de CEP
 
-## Getting Started
+Este é um projeto de um site que permite a consulta de informações sobre um CEP fornecido. O usuário insere um CEP em um campo de entrada, e o site retorna dados como endereço, bairro, cidade, estado, entre outros.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Funcionalidades
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Permite ao usuário digitar um CEP válido.
+- Realiza a consulta utilizando uma API de CEP (como **ViaCEP** ou outras disponíveis).
+- Exibe informações do endereço relacionado ao CEP solicitado.
+- Validação do CEP para garantir que apenas CEPs válidos sejam consultados.
+- Exibição de mensagens de erro em casos de:
+  - CEP inválido ou inexistente.
+  - Falha na conexão com a API.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Tecnologias Utilizadas
 
-## Learn More
+- **HTML5**: Estruturação da página.
+- **CSS3/Tailwind CSS**: Estilização da interface do usuário.
+- **JavaScript**: Interatividade e consumo da API.
+- **React.js** (se aplicável): Para a criação da interface dinâmica.
+- **Axios**: Para realizar as requisições HTTP (caso esteja usando React ou outra biblioteca similar).
+- API utilizada: **[ViaCEP](https://viacep.com.br/)**.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Como Executar o Projeto
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Requisitos
 
-## Deploy on Vercel
+Certifique-se de ter instalado:
+- **Node.js** (caso o projeto utilize React ou outro framework).
+- Um navegador moderno para acessar o site.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Passos
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/JucierG/my-project-example.git
